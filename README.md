@@ -25,61 +25,63 @@ Publish the website in the given URL.
 # PROGRAM :
 '''
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Image Gallery</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f4f4f4;
-    }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-      max-width: 1200px;
-      margin: auto;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: #dff7f4;
+            text-align: center;
+        }
 
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        h1 {
+            margin: 30px 0;
+            letter-spacing: 3px;
+        }
 
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-  </style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
+
 <body>
 
-  <h1>My Image Gallery</h1>
+    <h1>IMAGE GALLERY</h1>
 
-  <div class="gallery">
-    <img src="images/image1.jpg" alt="Image 1">
-    <img src="images/image2.jpg" alt="Image 2">
-    <img src="images/image3.jpg" alt="Image 3">
-    <img src="images/image4.jpg" alt="Image 4">
-    <img src="images/image5.jpg" alt="Image 5">
-    <img src="images/image6.jpg" alt="Image 6">
-  </div>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Nature">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Waterfall">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Backwater">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Temple">
+        <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b" alt="Beach">
+    </div>
 
 </body>
 </html>
+
+
+   
 '''
-# OUTPUT:
+# OUTPUT:![](gallery.png)
 # RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
